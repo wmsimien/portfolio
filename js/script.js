@@ -1,14 +1,14 @@
 // create variables
-// const inspireEl = document.querySelectorAll('#inspire h2');
-// console.log(inspireEl[0]);
+const heroHeading = document.querySelector('#hero-heading');
+const heroAuthor = document.querySelector('#hero-author');
 const links = document.querySelectorAll('.link');
 const sections = document.querySelectorAll('section');
 const githubTicTacToeBtn = document.querySelector('#github-tictactoe');
 const TicTacToeLiveBtn = document.querySelector('#tictactoe-live');
 
-// track active link
+// track active nav link
 let activeLink = 0;
-
+// display appropriate section of page
 links.forEach((link, i) => {
     link.addEventListener('click', () => {
         if(activeLink != i){
@@ -26,8 +26,7 @@ links.forEach((link, i) => {
     })
 })
 
-// const hrefEl = document.createAttribute('href');
-// const blankEl = document.createAttribute('blank');
+// create projects info
 const createProjectLinks = () => {
     // project 1
     const anchorEl = document.createElement('a');
@@ -39,60 +38,33 @@ const createProjectLinks = () => {
     anchorEl.setAttributeNode(hrefEl);
     anchorEl.setAttributeNode(blankEl);
     githubTicTacToeBtn.appendChild(anchorEl);
-    console.log(githubTicTacToeBtn);
 }
 
+// call function to create the project links, etc.
 createProjectLinks();
 
-// const goToGitHubProjcet = (e) => {
-//     e.preventDefault();
-//     console.log(e.target.id);
-//     switch(e.target.id) {
-//         case 'github-tictactoe':
-         
-//             const hrefEl = document.createAttribute('href');
-//             hrefEl.value = 'https://github.com/wmsimien/TicTacToe';
-//             const blankEl = document.createAttribute('blank');
-//             blankEl.value = '_blank';
-//             githubTicTacToeBtn.setAttributeNode(hrefEl);
-//             githubTicTacToeBtn.setAttributeNode(blankEl);
-//             break;
-//         default:
-//             break;
-//     }
-
-// }
-
-
-
-// listeners for project buttons
-// githubTicTacToeBtn.addEventListener('click', console.log('clicked'));
 // array of inspirational quotes
-// const inspireQuotes = [
-//     { quote: 'Live as if you were to die tomorrow. Learn as if you were to live forever.', 
-//       author:'― Mahatma Gandhi'
-//     },
-//     { quote: 'Smooth seas do not make skillful sailors.', 
-//       author:'― African Proverb'
-//     },
-//     { quote: 'Tell me and I forget, teach me and I may remember, involve me and I learn.', 
-//       author:'― Benjamin Franklin'
-//     },
-// ];
+const inspireQuotes = [
+    { quote: 'Live as if you were to die tomorrow. Learn as if you were to live forever.', 
+      author:'― Mahatma Gandhi'
+    },
+    { quote: 'Smooth seas do not make skillful sailors.', 
+      author:'― African Proverb'
+    },
+    { quote: 'Tell me and I forget, teach me and I may remember, involve me and I learn.', 
+      author:'― Benjamin Franklin'
+    },
+];
 
-// const runQuotes = () => {
-//     for (let i = 0; i < inspireQuotes.length; i++) {
-//         // inspireEl[0].textContent = `${inspireQuotes[i].quote}`;
-//         console.log(inspireQuotes[i].quote);
-//     }
-    // inspireQuotes.forEach(quote => {
-        // console.log(`${quote.quote}`);
-            // console.log(`${quote.author}`);
-        // inspireEl[0].textContent = '';
-        // inspireEl[0].textContent = `${quote.quote}`;
-        // setInterval(runQuotes, 2000);
-        // inspireEl[0].textContent = '';
-    // });
-// }
-// setInterval(runQuotes, 2000);
+let currentQuote = 0;
+const runQuotes = () => {
+    if (currentQuote < inspireQuotes.length) {
+        heroHeading.textContent = inspireQuotes[currentQuote].quote;
+        heroAuthor.textContent = inspireQuotes[currentQuote].author;
+        currentQuote++;
+    } else {
+        currentQuote = 0;
+    }
+};
+setInterval(runQuotes, 5000);
 // runQuotes();

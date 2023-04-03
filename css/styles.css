@@ -1,18 +1,25 @@
 :root {
-    --dark-text-color: #413F3D;
-    --light-text-color: #F2F1EF;
-    --nav-background-color: #697184;
-    --dark-taupe: #B1A6A4;
-    --light-taupe: #D8CFD0;
+    --dark-text-color: #B08401;
+    --light-text-color: #FAF6F2;
+    --nav-background-color: #683B2B;
+    --dark-taupe: #D49E8D;
+    --background: #DED1BD;
 }
-
+/*
+DARK GOLDENROD - #B08401
+TAN - #D49E8D
+DUST STORM - #DED1BD
+WHITE SMOKE - #FAF6F2
+VAN DYKE BROWN - #683B2B
+*/
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: var(--light-taupe);
+    background: var(--background);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* nav section */
@@ -26,7 +33,6 @@ body {
     align-items: center;
     z-index: 9;
     background: var(--nav-background-color);
-   
 }
 
 .nav-link-group {
@@ -62,13 +68,43 @@ body {
     opacity: 0;
     transition: 1s;
     position: fixed;
+    /* border: 3px solid gold; */
 }
 
-.hero-heading {
-    color: var(--dark-taupe);
+#heading-container {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    /* border: 3px solid purple; */
+}
+
+#name {
+   position: absolute;
+   top: 110px;
+   left: 15px;
+   color: var(--dark-taupe);
+   font-size: 50px;
+   letter-spacing: .2em;
+}
+
+#hero-heading {
+    position: absolute;
+    color: var(--dark-text-color);
     font-size: 40px;
     text-transform: capitalize;
     font-weight: 300;
+    /* border: 3px solid #73AD21 */
+}
+
+#hero-author {
+    /* border: 3px solid yellow; */
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+    float: right;
+    margin-top: 205px;
+    color: var(--dark-text-color);
+    opacity: 0.5;
 }
 
 .home-img {
@@ -78,7 +114,7 @@ body {
     height: 100vh;
     width: 50%;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.6;
 }
 
 .home-section.active,
@@ -113,10 +149,11 @@ body {
 }
 
 .about-info {
-    color: var(--dark-taupe);
-    opacity: 0.7;
-    font-size: 20px;
+    color: rgb(43, 40, 40);
+    opacity: 0.5;
+    font-size: 18px;
     line-height: 40px;
+    font-weight: 600;
 }
 
 .about-img {
@@ -139,12 +176,12 @@ body {
 
 .projects-heading {
     font-size: 100px;
-    background: var(--nav-background-color);
+    background: var(--dark-taupe);
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
     border-radius: 15px 50px;
-     color: var(--light-taupe);
+     color: var(--background);
 }
 
 .project-container {
@@ -171,7 +208,7 @@ body {
 .project-content {
     position: relative;
     padding: 40px;
-    color: var(--light-taupe);
+    color: var(--background);
     transition: .5s;
     opacity: 0;
 }
