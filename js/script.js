@@ -26,18 +26,23 @@ links.forEach((link, i) => {
     })
 })
 
-// create projects info
-const createProjectLinks = () => {
-    // project 1
+const createProjectBtn = (text, value, eleBtn) => {
     const anchorEl = document.createElement('a');
-    anchorEl.textContent = 'github';
+    anchorEl.textContent = text;
     const hrefEl = document.createAttribute('href');
-    hrefEl.value = 'https://github.com/wmsimien/TicTacToe';
+    hrefEl.value = value;
     const blankEl = document.createAttribute('blank');
     blankEl.value = '_blank';
     anchorEl.setAttributeNode(hrefEl);
     anchorEl.setAttributeNode(blankEl);
-    githubTicTacToeBtn.appendChild(anchorEl);
+    eleBtn.appendChild(anchorEl);
+}
+
+// create projects info
+const createProjectLinks = () => {
+    // project 1 - GitHub and Live Buttons
+    createProjectBtn('github', 'https://github.com/wmsimien/TicTacToe', githubTicTacToeBtn);
+    createProjectBtn('live', 'https://wmsimien.github.io/TicTacToe/', TicTacToeLiveBtn);
 }
 
 // call function to create the project links, etc.
