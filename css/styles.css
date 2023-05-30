@@ -250,6 +250,10 @@ body {
     cursor: pointer;
 }
 
+#github-galaxy {
+    width: 318px;
+}
+
 .contact-section {
     position: absolute;
     top: 0;

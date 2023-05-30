@@ -5,6 +5,7 @@ const links = document.querySelectorAll('.link');
 const sections = document.querySelectorAll('section');
 const githubTicTacToeBtn = document.querySelector('#github-tictactoe');
 const TicTacToeLiveBtn = document.querySelector('#tictactoe-live');
+const galaxayAPIBtn = document.querySelector('#github-galaxy');
 
 // track active nav link
 let activeLink = 0;
@@ -43,6 +44,8 @@ const createProjectLinks = () => {
     // project 1 - GitHub and Live Buttons
     createProjectBtn('github', 'https://github.com/wmsimien/TicTacToe', githubTicTacToeBtn);
     createProjectBtn('live', 'https://wmsimien.github.io/TicTacToe/', TicTacToeLiveBtn);
+    // project 2 - GitHub button only
+    createProjectBtn('github', 'https://github.com/wmsimien/AudioGalaxy-stream-APIs', galaxayAPIBtn);
 }
 
 // call function to create the project links, etc.
