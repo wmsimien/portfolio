@@ -152,8 +152,12 @@ body {
     color: rgb(43, 40, 40);
     opacity: 0.5;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 30px;
     font-weight: 600;
+    align-items: left;
+    width: 85%;
+    padding: 8px;
+  
 }
 
 .about-img {
@@ -191,7 +195,7 @@ body {
 }
 
 .project-card {
-    height: 400px;
+    /* height: 400px; */
     position: relative;
 }
 
@@ -225,6 +229,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     text-align: right;
+    
 }
 
 .project-btn-grp {
