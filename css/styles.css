@@ -189,7 +189,7 @@ body {
     text-align: center;
     margin-bottom: 45px;
     border-radius: 15px 50px;
-     color: var(--background);
+    color: var(--background);
 }
 
 .project-container {
@@ -256,12 +256,38 @@ body {
 
 .contact-section {
     position: absolute;
-    top: 0;
+    top: 10px;
     opacity: 0;
     transition: 1s;
     padding: 100px 150px;
-    height: 100vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
+
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 1px;
+
 }
+
+.me-text {
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100hw;
+}
+.card-body {
+    box-shadow: 4px 4px 15px rgb(216, 187, 187);
+    background: var(--dark-text-color);
+    color: var( --light-text-color);
+    border: 6px outset var(--dark-taupe);
+    box-shadow: 4px 4px 15px rgb(216, 187, 187);
+}
+.card {
+    margin: 0 auto;
+    margin-left: 40%; 
+}
+
