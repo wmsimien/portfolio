@@ -279,14 +279,14 @@ body {
     font-size: 18px;
     width: 100hw;
 }
-.card-body {
+.me-card-body {
     box-shadow: 4px 4px 15px rgb(216, 187, 187);
     background: var(--dark-text-color);
     color: var( --light-text-color);
     border: 6px outset var(--dark-taupe);
     box-shadow: 4px 4px 15px rgb(216, 187, 187);
 }
-.card {
+.me-card {
     margin: 0 auto;
     margin-left: 40%; 
 }
