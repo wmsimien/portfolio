@@ -168,10 +168,6 @@ body {
 }
 
 /* projects */
-.card {
-    width: 320px;
-}
-
 .projects-section {
     width: 100%;
     min-height: 100vh;
@@ -190,33 +186,6 @@ body {
     margin-bottom: 45px;
     border-radius: 15px 50px;
     color: var(--background);
-}
-
-.project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 100px;
-}
-
-.project-card {
-    position: relative;
-}
-
-.project-img {
-    width: 300px;
-    height: 290px; 
-    position: absolute;
-    top: 40px;
-    left: 5px;
-    transition: .5s;
-}
-
-.project-content {
-    position: relative;
-    padding: 40px;
-    color: var(--background);
-    transition: .5s;
-    opacity: 0;
 }
 
 .project-title {
@@ -250,10 +219,62 @@ body {
     cursor: pointer;
 }
 
-#github-galaxy {
-    width: 318px;
+.btn-align {
+  grid-template-columns: repeat(1, 1fr);
+} 
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 1rem;
+  }
+  
+.card {
+  
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: .5rem;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    color: #5d5e5e;
+} 
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+  
+.thumbnail img {
+    fill: #c7c4c4;
+    height: 135px;
+    padding: 1.5rem;
+}
+  
+.card-content {
+      font-size: .75rem;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
 }
 
+.heading {
+   color:  var(--dark-taupe);
+   text-align: center;
+} 
+
+/* Contact Section */
 .contact-section {
     position: absolute;
     top: 10px;
@@ -264,13 +285,12 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-
     align-items: center;
     margin: 0 auto;
     border-radius: 1px;
-
 }
 
+/* About Section */
 .me-text {
     justify-content: center;
     align-items: center;
@@ -290,4 +310,7 @@ body {
     margin: 0 auto;
     margin-left: 40%; 
 }
+
+
+
 

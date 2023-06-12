@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    
     <script type="text/javascript" src="./js/script.js" defer></script>
     <title>Wanda Avery Portfolio</title>
@@ -48,93 +49,95 @@
             </div>
             <div class="about-info"> 
               <p>Movitated software developer with over 20 years of professional 
-                coding experience with client-server applications assimilated to the Web tech space with emphasis on Java, Spring Boot, Angular, and TypeScript stack.  Seeking to use proven skills to meet the business needs of a company.  Friendly, a planner, chart-maker, inspiring, logical, resourceful, creative, and excellent thinker is what I bring.</p>
+                coding experience with client-server applications assimilated to the Web tech space with emphasis on Java, 
+                Spring Boot, Angular, and TypeScript stack.  Seeking to use proven skills to meet the business needs of a company. 
+                 Friendly, a planner, chart-maker, inspiring, logical, resourceful, creative, and excellent thinker is what I bring.</p>
             </div>
         </div>
     </section>
 
-    <!-- projects  -->
-    <section class="projects-section">
-      <h1 class="projects-heading">projects</h1>
-      <div class="accordion project-container" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <div class="project-title">Tic Tac Toe</div>
-            </h2>
-          </div>
-        
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"    data-parent="#accordionExample">
-              <div class="card-body project-info">
-                A web application whereby two users on the same computer can 
-                play tic-tac-toe. The application is hosted on GitHub pages.
-              </div>
-              <div class="project-img">
-              <img src="images/tictac3.png" class="project-img" alt=""></div>
-              <div class="project-btn-grp">
+       <!-- projects  -->
+       <section class="projects-section">
+        <h1 class="projects-heading">projects</h1>
+        <div class="cards">
+          <!-- Project Card 1 -->
+          <div class="card">
+            <h2 class="card-header heading">Tic Tac Toe</h2>
+            <picture class="thumbnail">
+                <img src="images/tictac3.png" alt="">
+            </picture>
+            <div class="card-content">
+                <p> A web application whereby two users on the same computer can 
+                      play tic-tac-toe. The application is hosted on GitHub pages.</p>
+            </div>
+            <div class="project-btn-grp">
                 <button class="project-btn github" id="github-tictactoe"></button>
                 <button class="project-btn live" id="tictactoe-live"></button>
-              </div>
+            </div>
           </div>
-      </div>
-
-      <div class="accordion project-container" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <div class="project-title">RESTful API</div>
-            </h2>
+  
+          <!-- Project Card 2 -->
+          <div class="card">
+            <h2 class="card-header heading">RESTful API</h2>
+            <picture class="thumbnail">
+              <img src="images/galaxy-api.png" alt="">
+            </picture>
+            <div class="card-content">
+              <p>  A RESTful API utilizing Java, Spring Boot, H2 Database, JWT, and JUnit which
+                  requires installation and Postman.</p>
+            </div>
+            <div class="project-btn-grp btn-align">
+              <button class="project-btn github" id="github-galaxy"></button>
+            </div>   
           </div>
-        
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"    data-parent="#accordionExample">
-              <div class="card-body project-info">
-                A RESTful API utilizing Java, Spring Boot, H2 Database, JWT, and JUnit which
-                requires installation and Postman.
-              </div>
-              <div class="project-img">
-              <img src="images/galaxy-api.png" class="project-img" alt=""></div>
-              <div class="project-btn-grp">
-                <button class="project-btn github" id="github-galaxy"></button>
-              </div>
-          </div>
-      </div>
-
-      <!-- <div class="accordion project-container" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <div class="project-title">Wayfarer</div>
-            </h2>
-          </div> -->
-        
-          <!-- <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"    data-parent="#accordionExample">
-              <div class="card-body project-info">
-                A web application 
-              </div>
-              <div class="project-img">
-              <img src="" class="project-img" alt=""></div>
-              <div class="project-btn-grp">
-                <button class="project-btn github" id="github-wayfarer"></button>
-              </div>
-          </div> -->
-      <!-- </div> -->
+  
+          <!-- Project Card 3 -->
+          <div class="card">
+            <h2 class="card-header heading">Wayfarer</h2>
+            <picture class="thumbnail">
+              <img src="images/Wayfarer.png" alt="">
+            </picture>
+            <div class="card-content">
+                <p> Our team concurred to build a community travel application aimed at creating a platform where users 
+                    can share city-specific tips, experiences, and recommendations. Whether it's a hidden gem, a must-visit 
+                    landmark, a local restaurant, or a unique cultural experience, this app allows travelers to discover and 
+                    contribute valuable information about their favorite locations around the world.</p>
+            </div>
      
-    </section>
+            <div class="project-btn-grp btn-align">
+              <button class="project-btn github" id="github-wayfarer"></button>
+            </div>   
+          </div>
+  
+          <!-- Project Card 4 -->
+          <div class="card">
+            <h2 class="card-header heading">Procure To Pay</h2>
+            <picture class="thumbnail">
+              <img src="images/home.png" alt="">
+            </picture>
+            <div class="card-content">
+              <p> A client requested an application which will provide their buyers the flexibility to create a purchase requisition 
+                  or indirect goods and services like media and advertising services or travel, and convert that request into a
+                  purchase order. With more and more of their suppliers requesting cash on delivery, the client is researching ways
+                  of streamlining their process of making indirect purchases while maintaining some efficiencies and accountability 
+                  in their accounts payable process. With a COD payment terms, the client can pay their suppliers online at the time 
+                  goods and services are delivered and connect the entire lifecycle of procurement from one phase to the next.</p>
+            </div>
+     
+            <div class="project-btn-grp">
+              <button class="project-btn github" id="github-p2p_api"></button>
+              <button class="project-btn github" id="github-p2p_client"></button>
+            </div>   
+          </div>
+        </div> 
+      </section>
+  
 
+ 
     <!-- contact section -->
     <section class="contact-section">
-        <!-- <div class="contact">
-            <p class="contact-me"></p>
-            <div>
-              <p>Wanda Avery</p>
-              <p>wanda.avery@att.net</p>
-              <p>214.226.4624</p>
-            </div>
-        </div> -->
         <div class="me-card" style="width: 28rem;">
         <div class="me-card-body">
-          <!-- <h5 class="card-title">Card title</h5> -->
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
           <p class="contact-me"></p>
             <div class="me-text">
               <p>Wanda M Avery</p>

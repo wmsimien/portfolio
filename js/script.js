@@ -6,6 +6,9 @@ const sections = document.querySelectorAll('section');
 const githubTicTacToeBtn = document.querySelector('#github-tictactoe');
 const TicTacToeLiveBtn = document.querySelector('#tictactoe-live');
 const galaxayAPIBtn = document.querySelector('#github-galaxy');
+const wayfarerBtn =document.querySelector('#github-wayfarer');
+const p2pBtn_client =document.querySelector('#github-p2p_client');
+const p2pBtn_api =document.querySelector('#github-p2p_api');
 
 // track active nav link
 let activeLink = 0;
@@ -46,6 +49,11 @@ const createProjectLinks = () => {
     createProjectBtn('live', 'https://wmsimien.github.io/TicTacToe/', TicTacToeLiveBtn);
     // project 2 - GitHub button only
     createProjectBtn('github', 'https://github.com/wmsimien/AudioGalaxy-stream-APIs', galaxayAPIBtn);
+    // project 3 - GitHub button only
+    createProjectBtn('github', 'https://github.com/wmsimien/wayfarer', wayfarerBtn);
+    // project 4 (Capstone) - GitHub button only
+    createProjectBtn('github-api', 'https://github.com/wmsimien/p2p-api', p2pBtn_api);
+    createProjectBtn('github-client', 'https://github.com/wmsimien/p2p-application', p2pBtn_client);
 }
 
 // call function to create the project links, etc.
